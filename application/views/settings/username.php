@@ -1,4 +1,4 @@
-<p><?php echo base_url().'<strong>@'.$username_value.'</strong>'; ?></p>
+<p><?php echo base_url().'<strong>'.'user/'.$username_value.'</strong>'; ?></p>
 
 <?php echo form_open(uri_string()); ?>
 
