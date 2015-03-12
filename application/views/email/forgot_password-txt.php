@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-Hi <?php echo $full_name; ?> (<?php echo '@'.$username;?>),
+Hi <?php echo $full_name; ?> (<?php echo 'user/'.$username;?>),
 
 Forgot your password, huh? No big deal.
 You can set a new password here:

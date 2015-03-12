@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </button>
         <a class="navbar-brand" href="<?php echo base_url(); ?>">
           <!-- <img src="http://placehold.it/142x35&text=logo"> -->
-          Kins
+          <?php echo $this->config->item('website_name', 'tank_auth'); ?>
         </a>
       </div>
 
@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <ul class="nav navbar-nav navbar-right">
           <li>
             <?php
-            if (!empty($logged_in_user)) echo anchor('', $logged_in_user['username']);
+            if (!empty($logged_in_user)) echo anchor('settings', $logged_in_user['username']);
             ?>
           </li>
           <li>

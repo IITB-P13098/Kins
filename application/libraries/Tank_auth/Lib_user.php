@@ -120,25 +120,4 @@ class Lib_user
     $this->ci->model_user->update_username($user_id, $new_username);
     return TRUE;
   }
-
-  function update_profile_image_url($user_id, $profile_image_url)
-  {
-    if (!empty($profile_image_url))
-    {
-      $this->ci->model_user->update_profile_image_url($user_id, $profile_image_url);
-    }
-  }
-  
-  public function update_steps_completed($user_id, $percent_progress)
-  {
-    $this->ci->model_user->update($user_id, array('steps_completed' => $percent_progress));
-  }
-
-  public function update_stats_posts_count($user_id)
-  {
-    $this->ci->load->library('social/lib_post_feed');
-    $posts_count = $this->ci->lib_post_feed->get_posts_count($user_id);
-
-    $this->ci->model_user->update_stats_posts_count($user_id, $posts_count);
-  }
 }

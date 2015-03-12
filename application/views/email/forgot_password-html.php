@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <tr>
                         <td width="36">&nbsp;</td>
                         <td align="left" style="font-size:14px;color:#444444;font-family: Verdana, sans-serif;border-collapse:collapse;" valign="top" width="454">
-                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('@'.$username, '@'.$username, 'style="color: #337AB7;" target="_blank"'); ?>),</p>
+                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('user/'.$username, 'user/'.$username, 'style="color: #337AB7;" target="_blank"'); ?>),</p>
                           
                           <p>
                           Forgot your password, huh? No big deal.<br />

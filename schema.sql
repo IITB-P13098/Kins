@@ -1,5 +1,10 @@
 -- CREATE DATABASE IF NOT EXISTS ci_kins;
 
+-- SHOW VARIABLES;
+-- SET global explicit_defaults_for_timestamp = 1;
+-- SET global time_zone="UTC"
+-- SET global innodb_autoinc_lock_mode = 0;
+
 -- --------------------------------------------------------
 
 --

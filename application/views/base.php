@@ -8,7 +8,7 @@ Page rendered in {elapsed_time} seconds, {memory_usage} size.
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to CodeIgniter</title>
+    <title>Welcome</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

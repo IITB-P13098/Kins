@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-Hi <?php echo $full_name; ?> (<?php echo '@'.$username;?>), welcome to <?php echo $site_name; ?>.
+Hi <?php echo $full_name; ?> (<?php echo 'user/'.$username;?>), welcome to <?php echo $site_name; ?>.
 
 We listed your sign in details below. Make sure you keep them safe.
 

@@ -75,6 +75,13 @@ $config = array(
   'auth/create_account'       => array($common_config['full_name'], $common_config['username'], $common_config['email'], $common_config['password']),
   'auth/forgot_password'      => array($common_config['login']),
   'auth/reset_password'       => array($common_config['password'], $common_config['confirm_password']),
+
+
+  'settings/username'         => array($common_config['username']),
+  'settings/email'            => array($common_config['email']),
+  'settings/password'         => array($common_config['old_password'], $common_config['password'], $common_config['confirm_password']),
+
+  'settings/account'          => array($common_config['full_name'], $common_config['bio'], $common_config['location']),
 );
 
 /* End of file form_validation.php */
