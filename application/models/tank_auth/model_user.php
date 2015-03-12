@@ -119,24 +119,6 @@ class Model_user extends CI_Model
     $this->db->where('user_id', $user_id);
     $this->db->update($this->user_table, $data);
   }
-
-  function update_profile_image_url($user_id, $profile_image_url)
-  {
-    $this->db->set('profile_image_url', $profile_image_url);
-
-    $this->db->where('user_id', $user_id);
-    // $this->db->where('profile_image_url IS NULL');
-
-    $this->db->update($this->user_table);
-  }
-
-  function update_stats_posts_count($user_id, $posts_count)
-  {
-    $this->db->set('posts_count', $posts_count);
-    $this->db->where('user_id', $user_id);
-
-    $this->db->update($this->user_table);
-  }
 }
 /* End of file model_user.php */
 /* Location: ./application/models/auth/model_user.php */
