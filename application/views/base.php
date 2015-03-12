@@ -10,6 +10,9 @@ Page rendered in {elapsed_time} seconds, {memory_usage} size.
     <meta charset="utf-8">
     <title>Welcome to CodeIgniter</title>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </head>
