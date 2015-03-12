@@ -194,6 +194,8 @@ class Lib_user_login
 
   function _verify_captcha()
   {
+    if ($this->ci->config->item('use_recaptcha', 'tank_auth') == FALSE) return TRUE;
+
     $this->ci->load->helper('recaptchalib');
     $this->ci->load->config('tank_auth', TRUE);
     

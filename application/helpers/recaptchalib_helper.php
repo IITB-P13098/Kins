@@ -144,7 +144,7 @@ class ReCaptcha
  * @param string $siteKey A public key for reCAPTCHA
  * @return string - The HTML to be embedded in the user's form.
  */
-function recaptcha_get_html ($siteKey)
+function recaptcha_get_html($siteKey)
 {
   $lang = "en";
 

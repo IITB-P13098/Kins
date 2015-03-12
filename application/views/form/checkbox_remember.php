@@ -1,4 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<?php
 if (empty($checkbox_remeber_value)) $checkbox_remeber_value = NULL;
 
 $remember = array(

@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -24,7 +27,7 @@
                       <tr>
                         <td width="36">&nbsp;</td>
                         <td align="left" style="font-size:14px;color:#444444;font-family: Verdana, sans-serif;border-collapse:collapse;" valign="top" width="454">
-                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('@'.$username, '@'.$username, 'style="color: #DA2E75;" target="_blank"');?>), welcome to <?php echo $site_name; ?>!</p>
+                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('@'.$username, '@'.$username, 'style="color: #337AB7;" target="_blank"');?>), welcome to <?php echo $site_name; ?>!</p>
 
                           <p>We listed your sign in details below, make sure you keep them safe.</p>
 

@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 Hi <?php echo $full_name; ?> (<?php echo '@'.$username;?>),
 
 Forgot your password, huh? No big deal.

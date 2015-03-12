@@ -1,4 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<?php
 $this->load->config('form_input', TRUE);
 
 $confirm_password = array(

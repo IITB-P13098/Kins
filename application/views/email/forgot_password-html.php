@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -24,16 +27,16 @@
                       <tr>
                         <td width="36">&nbsp;</td>
                         <td align="left" style="font-size:14px;color:#444444;font-family: Verdana, sans-serif;border-collapse:collapse;" valign="top" width="454">
-                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('@'.$username, '@'.$username, 'style="color: #DA2E75;" target="_blank"'); ?>),</p>
+                          <p>Hi <?php echo $full_name; ?> (<?php echo anchor('@'.$username, '@'.$username, 'style="color: #337AB7;" target="_blank"'); ?>),</p>
                           
                           <p>
                           Forgot your password, huh? No big deal.<br />
-                          You can set a new password <a href="<?php echo base_url('auth/reset_password/'.$user_id.'/'.$password_key); ?>" style="color: #DA2E75;" target="_blank">here</a>:
+                          You can set a new password <a href="<?php echo base_url('auth/reset_password/'.$user_id.'/'.$password_key); ?>" style="color: #337AB7;" target="_blank">here</a>:
                           </p>
 
                           <p>
                             <center>
-                              <a href="<?php echo base_url('auth/reset_password/'.$user_id.'/'.$password_key); ?>" style="font-size:16px;color:white;width:180px;font-weight:600;background-color:#DA2E75;padding:14px 7px 14px 7px;max-width:180px;font-family: Verdana, sans-serif;text-align:center;text-decoration:none;display:block;" target="_blank">
+                              <a href="<?php echo base_url('auth/reset_password/'.$user_id.'/'.$password_key); ?>" style="font-size:16px;color:white;width:180px;font-weight:600;background-color:#337AB7;padding:14px 7px 14px 7px;max-width:180px;font-family: Verdana, sans-serif;text-align:center;text-decoration:none;display:block;" target="_blank">
                                 Reset password
                               </a>
                             </center>

@@ -23,6 +23,8 @@ class Auth extends CI_Controller
   
   function _create_recaptcha()
   {
+    if ($this->config->item('use_recaptcha', 'tank_auth') == FALSE) return;
+
     $this->load->helper('recaptchalib');
     $this->load->config('tank_auth', TRUE);
     
@@ -66,8 +68,7 @@ class Auth extends CI_Controller
         }
       }
       
-      if ($this->lib_user_login->is_max_login_attempts_exceeded($this->form_validation->set_value('login'))
-        AND $this->config->item('use_recaptcha', 'tank_auth'))
+      if ($this->lib_user_login->is_max_login_attempts_exceeded($this->form_validation->set_value('login')))
       {
         $data['recaptcha_html'] = $this->_create_recaptcha();
       }
@@ -133,7 +134,7 @@ class Auth extends CI_Controller
     
     // $data['use_username']
     // $data['captcha_registration']
-    if ($this->config->item('captcha_registration', 'tank_auth') AND $this->config->item('use_recaptcha', 'tank_auth'))
+    if ($this->config->item('captcha_registration', 'tank_auth'))
     {
       $data['recaptcha_html'] = $this->_create_recaptcha();
     }

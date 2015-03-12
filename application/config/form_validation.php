@@ -15,49 +15,49 @@ $common_config = array(
   'username' => array(
     'field'   => 'username',
     'label'   => 'Username',
-    'rules'   => 'max_length['.$config['username_max_length'].']|xss_clean|trim|alpha_dash|required|is_unique_lower[user.username]',
+    'rules'   => 'strtolower|max_length['.$config['username_max_length'].']|trim|alpha_dash|required|is_unique[user.username]',
   ),
   'email' => array(
     'field'   => 'email',
     'label'   => 'New Email',
-    'rules'   => 'strtolower|max_length['.$config['email_max_length'].']|valid_email|xss_clean|trim|required|is_unique[user_login.email]'
+    'rules'   => 'strtolower|max_length['.$config['email_max_length'].']|valid_email|trim|required|is_unique[user_login.email]'
   ),
   'login' => array(
     'field'   => 'login',
     'label'   => 'Login',
-    'rules'   => 'max_length['.max($config['email_max_length'], $config['username_max_length']).']|strip_tags|xss_clean|trim|required',
+    'rules'   => 'max_length['.max($config['email_max_length'], $config['username_max_length']).']|strip_tags|trim|required',
   ),
   'full_name' => array(
     'field'   => 'full_name',
     'label'   => 'Full Name',
-    'rules'   => 'max_length['.$config['full_name_max_length'].']|strip_tags|xss_clean|trim|required',
+    'rules'   => 'max_length['.$config['full_name_max_length'].']|strip_tags|trim|required',
   ),
   'bio' => array(
     'field'   => 'bio',
     'label'   => 'Bio',
-    'rules'   => 'max_length['.$config['bio_max_length'].']|htmlspecialchars|xss_clean|trim'
+    'rules'   => 'max_length['.$config['bio_max_length'].']|htmlspecialchars|trim'
   ),
   'location' => array(
     'field'   => 'location',
     'label'   => 'Location',
-    'rules'   => 'max_length['.$config['location_max_length'].']|strip_tags|xss_clean|trim'
+    'rules'   => 'max_length['.$config['location_max_length'].']|strip_tags|trim'
   ),
   
   // input password
   'password' => array(
     'field'   => 'password',
     'label'   => 'Password',
-    'rules'   => 'min_length['.$config['password_min_length'].']|max_length['.$config['password_max_length'].']|required', // xss_clean|trim
+    'rules'   => 'min_length['.$config['password_min_length'].']|max_length['.$config['password_max_length'].']|required', // trim
   ),
   'old_password' => array(
     'field'   => 'old_password',
     'label'   => 'Old Password',
-    'rules'   => 'min_length['.$config['password_min_length'].']|max_length['.$config['password_max_length'].']|required', // xss_clean|trim
+    'rules'   => 'min_length['.$config['password_min_length'].']|max_length['.$config['password_max_length'].']|required', // trim
   ),
   'confirm_password' => array(
     'field'   => 'confirm_password',
     'label'   => 'Confirm Password',
-    'rules'   => 'matches[password]|required', // xss_clean|trim
+    'rules'   => 'matches[password]|required', // trim
   ),
 
   // check box
