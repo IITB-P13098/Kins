@@ -21,10 +21,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="main">
       <div class="container">
         <div class="row">
-          <div class="col-sm-push-4 col-sm-4">
+          <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
             
             <div class="logo">
-              <a href="<?php echo base_url(); ?>">Home</a>
+              <a href="<?php echo base_url(); ?>"><img class="img-responsive" src="http://placehold.it/200&text=logo"></a>
             </div>
             
             <h1><?php if (!empty($heading)) echo $heading; ?></h1>
